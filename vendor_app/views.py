@@ -94,7 +94,12 @@ def vendor_register(request):
     })
 
 def vendor_dashboard(request):
-    return render(request, 'vendor_dashboard.html')
+    # Fetch all vendors from the database
+    vendors = Vendor.objects.all()
+    
+    return render(request, 'vendor_dashboard.html', {
+        'vendors': vendors,
+    })
 
 
 def vendor_login(request):

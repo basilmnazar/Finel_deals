@@ -380,6 +380,20 @@ p{
   transition: background-color 0.3s;
   align-self: flex-start;
 }
+.button_call {
+  background-color: #6d8fe6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: flex-start;
+}
+
+.button_call:hover {
+  background-color: #4a6eb1;
+}
 .voucher_name{
   margin: auto;
 }

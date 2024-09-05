@@ -62,9 +62,12 @@
                 <img class="rupee-icon" src="{% static 'src/images/rupee-indian (1).png' %}" alt="Rupee">
                 <h3 class="proce_deal">{{ voucher.voucher_price }} /-</h3>
             </div>
-            
-            <button class="add_button" data-modal-id="modal-{{ forloop.counter }}">BUY</button>
-            
+            <div class="button-container">
+              <button class="add_button" data-modal-id="modal-{{ forloop.counter }}">BUY</button>
+              <a href="tel:+918593810130" class="button__call">
+                <button class="button_call">Customer Care</button>
+              </a>
+            </div>
             <!-- Popup Modal -->
             <div id="modal-{{ forloop.counter }}" class="modal">
                 <div class="modal-content">
